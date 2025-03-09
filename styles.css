@@ -82,8 +82,39 @@ body{
 
 
 
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+}
 
+.contact-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
 
+.resume-list {
+  list-style: none;
+  padding: 0;
+}
+
+.resume-list li {
+  margin: 10px 0;
+}
+
+.resume-list a {
+  color: #4acfee;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.resume-list a:hover {
+  color: white;
+  text-decoration: underline;
+}
 
 
 .main-section{
