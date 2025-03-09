@@ -133,13 +133,13 @@ nav a:hover, .active {
 }
 
 /* Responsive Design */
-@media (max-width: 680px) {
+@media (max-width: 980px) {
     .hero {
         flex-direction: column;
         text-align: center;
     }
 
     .team-container {
-        margin-top: 12px;
+        margin-top: 15px;
     }
 }
