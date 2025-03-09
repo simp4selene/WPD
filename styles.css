@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -108,40 +107,29 @@ nav a:hover, .active {
     color: #4acfee;
 }
 
-/* Updated Team Section */
+/* Circular Team Images */
 .team-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    gap: 15px;
     margin-top: 20px;
 }
 
-.team-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.team-container a {
+    text-decoration: none;
 }
 
-.team-member img {
-    width: 120px; /* Bigger image size */
-    height: 120px;
+.team-container img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
 
-.team-member img:hover {
+.team-container img:hover {
     transform: scale(1.1);
-}
-
-.team-member p {
-    margin-top: 8px;
-    font-size: 16px;
-    color: white;
-    font-weight: bold;
 }
 
 /* Responsive Design */
@@ -152,12 +140,6 @@ nav a:hover, .active {
     }
 
     .team-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 images per row for smaller screens */
-    }
-}
-
-@media (max-width: 600px) {
-    .team-container {
-        grid-template-columns: repeat(1, 1fr); /* 1 image per row for mobile */
+        margin-top: 15px;
     }
 }
